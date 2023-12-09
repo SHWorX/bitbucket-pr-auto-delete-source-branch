@@ -1,6 +1,18 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.0.4]
+
+Fixed wrong addon ID format in manifest.json + wrong extension version
+
+### Added
+
+### Changed
+
+### Fixed
+- Wrong addon ID format in manifest.json
+- Wrong extension version in manifest.json
+
 ## [0.0.3]
 
 Added addon ID to extension
