@@ -1,9 +1,13 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Bitbucket PR auto delete source branch",
   "description": "Automatically checks the checkbox to delete the current branch after the pull request is merged on Bitbucket Cloud. This extension automatically checks the checkbox to delete the source branch in a Bitbucket Pull Request after merging it into the destination branch. Developers may forget to check this checkbox when creating a Pull Request, leaving the stale merged branches in the remote. This functionality is available as a native configuration in Bitbucket Server, but it is not available in Bitbucket Cloud, so this extension solves that problem. This is a port of the Google Chrome extension \"Bitbucket Pull Request auto delete branch\"!",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Steffen Haase",
+  "developer": {
+    "name": "Steffen Haase (SHWorX)",
+    "url": "https://github.com/SHWorX/bitbucket-pr-auto-delete-source-branch"
+  },
   "content_scripts": [
     {
       "matches": [

@@ -31,7 +31,7 @@ try {
  * @returns
  * @see https://stackoverflow.com/a/61511955/5231262
  */
-function waitForElm(selector) {
+function waitForElement(selector) {
     return new Promise(resolve => {
         if (document.querySelector(selector)) {
             return resolve(document.querySelector(selector));
@@ -52,7 +52,7 @@ function waitForElm(selector) {
 }
 
 const checkDeleteBranchCheckbox = () => {
-    waitForElm(DELETE_BRANCH_CHECKBOX_SELECTOR).then(elm => {
+    waitForElement(DELETE_BRANCH_CHECKBOX_SELECTOR).then(elm => {
         // Trick to wait for the checkbox to be ready. It's a total mistery why I can't click it directly!
         setTimeout(() => {
             if (!elm.checked) {
